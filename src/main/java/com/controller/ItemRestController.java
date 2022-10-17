@@ -50,6 +50,7 @@ public class ItemRestController {
 	
 	@GetMapping("/findbyid/{id}")
 	public Item getItem(@PathVariable int id) {
+		
 		Item item=itemdao.findById(id).get();
 		
 		return item;
