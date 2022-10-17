@@ -27,16 +27,16 @@ public class ItemTest {
       
     }
 
-	@Test
-    void test2() throws URISyntaxException, JsonProcessingException {
-		
-	    RestTemplate template=new RestTemplate();
-	    final String url="http://localhost:" + port + "/getallitem";
-	    URI uri=new URI(url);
-	      
-	    ResponseEntity<String> res=template.getForEntity(uri,String.class);
-	    Assertions.assertEquals(HttpStatus.OK,res.getStatusCode());
-      
-    }
+//	@Test
+//    void test2() throws URISyntaxException, JsonProcessingException {
+//		
+//	    RestTemplate template=new RestTemplate();
+//	    final String url="http://localhost:" + port + "/getallitem";
+//	    URI uri=new URI(url);
+//	      
+//	    ResponseEntity<String> res=template.getForEntity(uri,String.class);
+//	    Assertions.assertEquals(HttpStatus.OK,res.getStatusCode());
+//      
+//    }
 	
 }
